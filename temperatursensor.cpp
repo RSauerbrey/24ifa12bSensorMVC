@@ -7,7 +7,6 @@ TemperaturSensor::TemperaturSensor()
     for(int i = 0 ; i < 10 ; i++ )
     {
         data[i] = (double) (-40.0 + rand() %1001)/10.0;
-        cout << data[i] << endl;
     }
 }
 

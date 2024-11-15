@@ -7,7 +7,6 @@ FeuchteSensor::FeuchteSensor()
     for(int i = 0 ; i < 10 ; i++ )
     {
         data[i] = (double) (rand() %1001)/10.0;
-        cout << data[i] << endl;
     }
 }
 
