@@ -1,6 +1,15 @@
 #include "feuchtesensor.h"
 
-FeuchteSensor::FeuchteSensor() {}
+FeuchteSensor::FeuchteSensor()
+{
+    //Erzeuge 10 Zufallswerte
+    srand(time(NULL));
+    for(int i = 0 ; i < 10 ; i++ )
+    {
+        data[i] = (double) (rand() %1001)/10.0;
+        cout << data[i] << endl;
+    }
+}
 
 string FeuchteSensor::getSensorType()
 {
